@@ -1,0 +1,53 @@
+@use "_variables" as * ;
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../image/BackgroundVegetable.jpg);
+    main {
+        height: 86vh;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 7vh;
+    background-color: $mint;
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5vh;
+        width: 70px;
+        background-color: white;
+        border-radius: 5px;
+        p {
+            font-family:$another-montserrat;
+            i {
+                margin-right: 7px;
+            }
+        }
+    }
+    .eng-lng {
+        margin-right: 10px;
+        margin-left: 5px
+    }
+};
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    background-color: $grey;
+    .footer-container a img {
+        height: 4vh;
+        margin-left: 7px;
+    }
+}

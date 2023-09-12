@@ -1,4 +1,5 @@
-@use "_variables" as * ;
+@use "_variables" as var ;
+@use "_breakpoints" as bpts;
 
 * {
     margin: 0;
@@ -7,9 +8,6 @@
 
 body {
     background-image: url(../image/BackgroundVegetable.jpg);
-    main {
-        height: 86vh;
-    }
 }
 
 header {
@@ -17,17 +15,17 @@ header {
     justify-content: flex-end;
     align-items: center;
     height: 7vh;
-    background-color: $mint;
+    background-color: var.$mint;
     div {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 5vh;
-        width: 70px;
-        background-color: white;
+        width: 60px;
+        background-color: var.$white;
         border-radius: 5px;
         p {
-            font-family:$another-montserrat;
+            font-family:var.$another-montserrat;
             i {
                 margin-right: 7px;
             }
@@ -39,13 +37,103 @@ header {
     }
 };
 
+main {
+    height: 86vh;
+    .aplication-name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .name-section {
+            margin: 3vh 0 3vh 0;
+            padding: 1vh 5vw 1vh 5vw;
+            background-color: var.$mint;
+            border-radius: 5px;
+            color: var.$white;
+            font-family: var.$primary-montserrat;
+            font-weight: bold;
+            font-size: 6vw;
+        }
+    }
+    .aplication-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .left-section {
+            display: flex;
+            flex-direction: column;
+            width: 70vw;
+            background-color: var.$mint;
+            padding: 4vh 1vw 4vh 1vw;
+            border-radius: 10px;
+            input {
+                text-align: center;
+                border-radius: 10px;
+                font-family: var.$secondary-montserrat;
+                border-color: black;
+            }
+            .choose-grams {
+                margin-top: 1vh;
+                margin-bottom: 1vh;
+                border-color: black;
+                caret-color: black;
+            }
+            .choose-product {
+                border-radius: 10px;
+                option {
+                text-align: center;
+                font-family: var.$secondary-montserrat;   
+                }
+            }
+        }
+        .equal {
+            p {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: var.$secondary-montserrat;
+                background-color: var.$mint;
+                height: 5vh;
+                width: 5vh;
+                border-radius: 50%;
+                margin: 1vh;
+            }
+        }
+        .right-section {
+            display: flex;
+            flex-direction: column;
+            width: 70vw;
+            background-color: var.$mint;
+            padding: 4vh 1vw 4vh 1vw;
+            border-radius: 10px;
+            input, p {
+                text-align: center;
+                border-radius: 10px;
+                font-family: var.$secondary-montserrat;
+            }
+            p {
+                font-size: 13.3333px;
+                margin-top: 1vh;
+                margin-bottom: 1vh;
+                background-color: var.$white;
+            }
+            .choose-product {
+                border-radius: 10px;
+                option {
+                    text-align: center;
+                font-family: var.$secondary-montserrat;
+                }
+            }
+        }
+    }
+}
 
 .footer {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 7vh;
-    background-color: $grey;
+    background-color: var.$grey;
     .footer-container a img {
         height: 4vh;
         margin-left: 7px;

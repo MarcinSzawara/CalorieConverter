@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
+    <link rel="icon" href="image/favicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Przelicznik Kalori</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;500;800&family=Hind+Madurai:wght@300;500;700&family=Montserrat:wght@300;500;800&display=swap" rel="stylesheet">
@@ -21,9 +22,9 @@
         </section>
         <section class="aplication-container">
             <section class="left-section">
-                <input placeholder="Znajdz produkt" class="search-product" type="text" name="product">
-                <input placeholder="Wpisz grmature" class="choose-grams" type="text" name="grams">
-                <select class="choose-product" name="products" id="products" multiple>
+                <input class="search-product" placeholder="Znajdz produkt" type="text" name="product">
+                <input class="quantity" placeholder="Wpisz grmature" type="text" name="grams">
+                <select class="choose-products" name="products" id="products" multiple>
                     <option value="orange">Pomarańcz</option>
                     <option value="apple">Jabłko</option>
                     <option value="grapefruit">Grejfrut</option>
@@ -40,9 +41,9 @@
             </section>
             <section class="equal"><p>X</p></section>
             <section class="right-section">
-                <input placeholder="Znajdz produkt" class="search-product" type="text" name="product">
-                <p class="count-grams">230 <span>gram</span></p>
-                <select class="choose-product" name="products" id="products" multiple>
+                <input class="search-product" placeholder="Znajdz produkt" type="text" name="product">
+                <p class="result">Tutaj odczytasz wynik</p>
+                <select class="choose-products" name="products" id="products" multiple>
                     <option value="orange">Pomarańcz</option>
                     <option value="apple">Jabłko</option>
                     <option value="grapefruit">Grejfrut</option>
@@ -61,9 +62,9 @@
     </main>
     <footer class="footer">
         <div class="footer-container">
-            <a href="https://www.facebook.com/dietetykewelinaozimek/?locale=pl_PL"><img src="image/facebookicon.png" alt=""></a>
-            <a href="https://www.instagram.com/ewelina.ozimek.dietetyk/"><img src="image/instagramIcon.png" alt=""></a>
-            <a href="http://www.dietetykewelinaozimek.pl/"><img src="image/webSiteIcon.png" alt=""></a>
+            <a class="facebook-icon" href="https://www.facebook.com/dietetykewelinaozimek/?locale=pl_PL"><img src="image/facebookicon.png" alt=""></a>
+            <a class="instagram-icon" href="https://www.instagram.com/ewelina.ozimek.dietetyk/"><img src="image/instagramIcon.png" alt=""></a>
+            <a class="website-icon" href="http://www.dietetykewelinaozimek.pl/"><img src="image/webSiteIcon.png" alt=""></a>
         </div>
     </footer>
 </body>

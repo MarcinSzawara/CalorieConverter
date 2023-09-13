@@ -6,10 +6,6 @@
     box-sizing: border-box;
 }
 
-body {
-    background-image: url(../image/BackgroundVegetable.jpg);
-}
-
 header {
     display: flex;
     justify-content: flex-end;
@@ -38,7 +34,8 @@ header {
 };
 
 main {
-    height: 86vh;
+    background-image: url(../image/BackgroundVegetable.jpg);
+    min-height: 86vh;
     .aplication-name {
         display: flex;
         justify-content: center;
@@ -59,47 +56,7 @@ main {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        .left-section {
-            display: flex;
-            flex-direction: column;
-            width: 70vw;
-            background-color: var.$mint;
-            padding: 4vh 1vw 4vh 1vw;
-            border-radius: 10px;
-            input {
-                text-align: center;
-                border-radius: 10px;
-                font-family: var.$secondary-montserrat;
-                border-color: black;
-            }
-            .choose-grams {
-                margin-top: 1vh;
-                margin-bottom: 1vh;
-                border-color: black;
-                caret-color: black;
-            }
-            .choose-product {
-                border-radius: 10px;
-                option {
-                text-align: center;
-                font-family: var.$secondary-montserrat;   
-                }
-            }
-        }
-        .equal {
-            p {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-family: var.$secondary-montserrat;
-                background-color: var.$mint;
-                height: 5vh;
-                width: 5vh;
-                border-radius: 50%;
-                margin: 1vh;
-            }
-        }
-        .right-section {
+        .left-section, .right-section {
             display: flex;
             flex-direction: column;
             width: 70vw;
@@ -107,22 +64,44 @@ main {
             padding: 4vh 1vw 4vh 1vw;
             border-radius: 10px;
             input, p {
-                text-align: center;
+                border: 2px solid var.$black;
                 border-radius: 10px;
+                text-align: center;
                 font-family: var.$secondary-montserrat;
             }
-            p {
-                font-size: 13.3333px;
+            .quantity, .result {
                 margin-top: 1vh;
                 margin-bottom: 1vh;
-                background-color: var.$white;
+                border-width: 2px;
             }
-            .choose-product {
+            .choose-products {
+                border: 2px solid var.$black;
                 border-radius: 10px;
                 option {
-                    text-align: center;
-                font-family: var.$secondary-montserrat;
+                text-align: center;
+                font-family: var.$secondary-montserrat;   
                 }
+            }
+            .result {
+                border: 2px solid var.$black;
+                background-color: var.$white;
+                font-size: 13.33px;
+            }
+        }
+        .right-section {
+            margin-bottom: 3vh;
+        }
+        .equal {
+            p {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 1vh;
+                height: 5vh;
+                width: 5vh;
+                border-radius: 50%;
+                background-color: var.$mint;
+                font-family: var.$secondary-montserrat;
             }
         }
     }

@@ -1,71 +1,60 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <link rel="icon" href="image/favicon.png">
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Przelicznik Kalori</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;500;800&family=Hind+Madurai:wght@300;500;700&family=Montserrat:wght@300;500;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e6ae8348a6.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="image/favicon.png">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <header>
-        <div class="pl-lng"><p><i class="fa-solid fa-check" style="color: #000000;"></i>PL</p></div>
-        <div class="eng-lng"><p><i class="fa-solid fa-xmark" style="color: #000000;"></i>ENG</p></div>
-    </header>
     <main>
-        <section class="aplication-name">
-            <p class="name-section">Przelicznik Kalorii</p>
+        <section class="language-container">
+            <p class="language polish"><i class="fa-solid fa-check" style="color: #ffffff;"></i>PL</p>
+            <p class="language english"><i class="fa-solid fa-xmark" style="color: #ffffff;"></i>ENG</p>
         </section>
         <section class="aplication-container">
-            <section class="left-section">
-                <input class="search-product" placeholder="Znajdz produkt" type="text" name="product">
-                <input class="quantity" placeholder="Wpisz grmature" type="text" name="grams">
-                <select class="choose-products" name="products" id="products" multiple>
-                    <option value="orange">Pomarańcz</option>
-                    <option value="apple">Jabłko</option>
-                    <option value="grapefruit">Grejfrut</option>
-                    <option value="potato">Ziemniak</option>
-                    <option value="tomato">Pomidor</option>
-                    <option value="pinapple">Ananas</option>
-                    <option value="cucumber">Ogórek</option>
-                    <option value="banana">Banan</option>
-                    <option value="egg">Jajko</option>
-                    <option value="becon">Boczek</option>
-                    <option value="paper">Papryka</option>
-                    <option value="corn">Kukurydza</option>
-                </select>
+            <section class="circle-container">
+                <div class="circle">
+                    <p class="output result">240</p>
+                    <p class="output grams-label">gramów</p>
+                </div>
             </section>
-            <section class="equal"><p>X</p></section>
-            <section class="right-section">
-                <input class="search-product" placeholder="Znajdz produkt" type="text" name="product">
-                <p class="result">Tutaj odczytasz wynik</p>
-                <select class="choose-products" name="products" id="products" multiple>
-                    <option value="orange">Pomarańcz</option>
-                    <option value="apple">Jabłko</option>
-                    <option value="grapefruit">Grejfrut</option>
-                    <option value="potato">Ziemniak</option>
-                    <option value="tomato">Pomidor</option>
-                    <option value="pinapple">Ananas</option>
-                    <option value="cucumber">Ogórek</option>
-                    <option value="banana">Banan</option>
-                    <option value="egg">Jajko</option>
-                    <option value="becon">Boczek</option>
-                    <option value="paper">Papryka</option>
-                    <option value="corn">Kukurydza</option>
-                </select>
+            <section class="form">
+                    <input placeholder="wpisz gramature" class="input grams" type="number">
+                    <select required class="input first" name="first" id="first">
+                        <option selected disabled value="">wybierz produkt, który chcesz zmienić</option>
+                        <option value="cucumber">Ogórek</option>
+                        <option value="tomato">Pomidor</option>
+                        <option value="carrot">Marchewka</option>
+                        <option value="potato">Ziemniak</option>
+                        <option value="papper">Papryka</option>
+                        <option value="beetroot">Burak</option>
+                        <option value="cauliflower">Kalafior</option>
+                        <option value="beans">Fasola</option>
+                        <option value="cabbage">Kapusta</option>
+                        <option value="radish">Rzodkiewka</option>
+                    </select>
+                    <select required class="input second" name="second" id="second">
+                        <option selected disabled value="">wybierz produkt, który chcesz zjeść</option>
+                        <option value="cucumber">Ogórek</option>
+                        <option value="tomato">Pomidor</option>
+                        <option value="carrot">Marchewka</option>
+                        <option value="potato">Ziemniak</option>
+                        <option value="papper">Papryka</option>
+                        <option value="beetroot">Burak</option>
+                        <option value="cauliflower">Kalafior</option>
+                        <option value="beans">Fasola</option>
+                        <option value="cabbage">Kapusta</option>
+                        <option value="radish">Rzodkiewka</option>
+                    </select>
             </section>
         </section>
     </main>
-    <footer class="footer">
-        <div class="footer-container">
-            <a class="facebook-icon" href="https://www.facebook.com/dietetykewelinaozimek/?locale=pl_PL"><img src="image/facebookicon.png" alt=""></a>
-            <a class="instagram-icon" href="https://www.instagram.com/ewelina.ozimek.dietetyk/"><img src="image/instagramIcon.png" alt=""></a>
-            <a class="website-icon" href="http://www.dietetykewelinaozimek.pl/"><img src="image/webSiteIcon.png" alt=""></a>
-        </div>
-    </footer>
 </body>
 </html>

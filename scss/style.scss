@@ -29,6 +29,66 @@
         background-color: brick.$hover-mint;
         margin: 5px 10px 0 0;
     }
+    @include media(xsmall) {
+        width: 15vw;
+        margin: 10px 20px 0 0;
+        padding: 0.7vw;
+        font-size: 3.5vw;
+        i {
+            margin-right: 1vw;
+        }
+        &:hover {
+            margin: 5px 20px 0 0;
+        }
+    }
+    @include media(small) {
+        width: 12vw;
+        margin: 10px 20px 0 0;
+        padding: 0.7vw;
+        font-size: 2.5vw;
+        i {
+            margin-right: 1vw;
+        }
+        &:hover {
+            margin: 5px 20px 0 0;
+        }
+    }
+    @include media(medium) {
+        width: 10vw;
+        margin: 10px 20px 0 0;
+        padding: 0.7vw;
+        font-size: 2.5vw;
+        i {
+            margin-right: 0.8vw;
+        }
+        &:hover {
+            margin: 5px 20px 0 0;
+        }
+    }
+    @include media(large) {
+        width: 11vw;
+        margin: 10px 20px 0 0;
+        padding: 0.5vw;
+        font-size: 2.5vw;
+        i {
+            margin-right: 0.8vw;
+        }
+        &:hover {
+            margin: 5px 20px 0 0;
+        }
+    }
+    @include media(xlarge) {
+        width: 9vw;
+        margin: 10px 20px 0 0;
+        padding: 0.5vw;
+        font-size: 1.5vw;
+        i {
+            margin-right: 0.5vw;
+        }
+        &:hover {
+            margin: 5px 20px 0 0;
+        }
+    }
     @include media(xxlarge) {
         width: 6vw;
         margin: 10px 20px 0 0;
@@ -64,6 +124,18 @@
     @include flexbox;
     flex-direction: column;
     margin-top: 0;
+    @include media(small) {
+        margin-top: 1vh;
+    }
+    @include media(medium) {
+        margin-top: 2vh;
+    }
+    @include media(large) {
+        margin-top: 4vh;
+    }
+    @include media(xlarge) {
+        margin-top: 6vh;
+    }
     @include media(xxlarge) {
         margin-top: 8vh;
     }
@@ -74,6 +146,26 @@
         box-shadow: 0 0 100px rgba(0, 0, 0, 50%);
         border-radius: 50%;
         background-color: brick.$mint;
+        @include media(xsmall) { 
+            height: 60vw;
+            width: 60vw; 
+        }
+        @include media(small) { 
+            height: 50vw;
+            width: 50vw; 
+        }
+        @include media(medium) { 
+            height: 40vw;
+            width: 40vw; 
+        }
+        @include media(large) { 
+            height: 35vw;
+            width: 35vw; 
+        }
+        @include media(xlarge) { 
+            height: 30vw;
+            width: 30vw; 
+        }
         @include media(xxlarge) { 
             height: 25vw;
             width: 25vw; 
@@ -90,6 +182,21 @@
                 font-weight: 800;
                 font-size: 10vw;
                 color: brick.$white;
+                @include media(xsmall) {
+                    font-size: 7.5vw;
+                }
+                @include media(small) {
+                    font-size: 6.5vw;
+                }
+                @include media(medium) {
+                    font-size: 5vw;
+                }
+                @include media(large) {
+                    font-size: 4.5vw;
+                }
+                @include media(xlarge) {
+                    font-size: 4vw;
+                }
                 @include media(xxlarge) {
                     font-size: 3vw;
                 }
@@ -104,9 +211,29 @@
         box-shadow: 0 0 100px rgba(0, 0, 0, 50%);
         border-radius: 25px;
         background-color: brick.$mint;
+        @include media(xsmall) { 
+            gap: 2vw;
+            margin: 5vw 0 1vw 0;
+        }
+        @include media(small) { 
+            gap: 1.8vw;
+            margin: 5vw 0 1vw 0;
+        }
+        @include media(medium) { 
+            gap: 1.6vw;
+            margin: 4vw 0 1vw 0;
+        }
+        @include media(large) { 
+            gap: 1.4vw;
+            margin: 3vw 0 1vw 0;
+        }
+        @include media(xlarge) { 
+            gap: 1.2vw;
+            margin: 2vw 0 1vw 0;
+        }
         @include media(xxlarge) { 
             gap: 1vw;
-            margin: 1vw 0 1vw 0;
+            margin: 1.5vw 0 1vw 0;
         }
         .aplication__input {
             width: 70vw;
@@ -116,6 +243,31 @@
             text-align: center;
             font-size: 3vw;
             cursor: pointer;
+            @include media(xsmall) { 
+                width: 56vw;
+                padding: 0.5vw 0 0.5vw 0;
+                font-size: 1.9vw;
+            }
+            @include media(small) { 
+                width: 46.4vw;
+                padding: 0.5vw 0 0.5vw 0;
+                font-size: 1.7vw;
+            }
+            @include media(medium) { 
+                width: 36.8vw;
+                padding: 0.5vw 0 0.5vw 0;
+                font-size: 1.5vw;
+            }
+            @include media(large) { 
+                width: 32.2vw;
+                padding: 0.5vw 0 0.5vw 0;
+                font-size: 1.2vw;
+            }
+            @include media(xlarge) { 
+                width: 27.6vw;
+                padding: 0.5vw 0 0.5vw 0;
+                font-size: 1vw;
+            }
             @include media(xxlarge) { 
                 width: 20vw;
                 padding: 0.5vw 0 0.5vw 0;
@@ -133,12 +285,39 @@
             &::placeholder {
                 color: brick.$inactive;
             }
+            @include media(xsmall) { 
+                margin: 2vw 2vw 0 2vw;
+            }
+            @include media(small) { 
+                margin: 1.8vw 1.8vw 0 1.8vw;
+            }
+            @include media(medium) { 
+                margin: 1.6vw 1.6vw 0 1.6vw;
+            }
+            @include media(large) { 
+                margin: 1.4vw 1.4vw 0 1.4vw;
+            }
+            @include media(xlarge) { 
+                margin: 1.2vw 1.2vw 0 1.2vw;
+            }
             @include media(xxlarge) { 
                 margin: 1vw 1vw 0 1vw;
             }
         }
         .aplication__second--product {
             margin-bottom: 3vw;
+            @include media(small) { 
+                margin-bottom: 2vw;
+            }
+            @include media(medium) { 
+                margin-bottom: 1.6vw;
+            }
+            @include media(large) { 
+                margin-bottom: 1.4vw;
+            }
+            @include media(xlarge) { 
+                margin-bottom: 1.2vw;
+            }
             @include media(xxlarge) { 
                 margin-bottom: 1vw;
             }

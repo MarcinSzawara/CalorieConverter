@@ -1,0 +1,7 @@
+{
+    "compilerOptions": {
+        "rootDir": "typescript",
+        "outDir": "javascript",
+        "target": "ES2015"
+    }
+}

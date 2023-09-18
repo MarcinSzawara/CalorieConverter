@@ -1,4 +1,5 @@
-const products = [
+export const jeden = 1;
+export const products = [
     {
         plName: 'Ogórek',
         engName: 'Cucumber',

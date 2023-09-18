@@ -1,8 +1,8 @@
-const products: {
-    plName: string;
-    engName: string;
-    kcal: number;
-}[] = [
+import { typeVariable  } from "./_types"
+
+export const jeden: number = 1;
+
+export const products: typeVariable[] = [
     {
         plName: 'Ogórek',
         engName: 'Cucumber',

@@ -1,3 +1,4 @@
+import { products } from "./_products.js";
 const plBtn = document.querySelector(".language__polish");
 const engBtn = document.querySelector(".language__english");
 const gramsInput = document.querySelector(".aplication__grams");
@@ -7,6 +8,11 @@ const secondProduct = document.querySelector(".aplication__first--product");
 const secondOption = document.querySelector(".aplication__second--product option");
 const result = document.querySelector(".aplication__number");
 const text = document.querySelector(".aplication__text");
+const liczenie = products.forEach(element => {
+    let option = document.createElement("option");
+    option.textContent = element.plName;
+    firstProduct.appendChild(option);
+});
 // WPROWADZENI POLSKICH NAZW________________________
 const polishLanguage = () => {
     plBtn.classList.add("button--active");

@@ -1,5 +1,6 @@
 // IMPORTOWANIE ELEMENTÓW_____________________________________
 import { products } from "./_products.js";
+import { Language } from "./Language.js";
 // POBIERANIE ELEMENTÓW_____________________________________
 const plBtn = document.querySelector(".language__polish");
 const engBtn = document.querySelector(".language__english");
@@ -68,3 +69,5 @@ plBtn.addEventListener("click", () => {
 engBtn.addEventListener("click", () => {
     englishLanguage();
 });
+const start = new Language(document.documentElement.lang);
+start.dawaj();

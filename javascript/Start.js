@@ -2,21 +2,7 @@
 import { Language } from "./Language.js";
 import { Options } from "./Options.js";
 import { products } from "./_products.js";
-// // POBIERANIE ELEMENTÓW_____________________________________
-// const plBtn: HTMLButtonElement = document.querySelector(".language__polish");
-// const engBtn: HTMLButtonElement = document.querySelector(".language__english");
-// const gramsInput: HTMLInputElement = document.querySelector(".aplication__grams");
-// const firstProduct: HTMLInputElement = document.querySelector(".aplication__first--product");
-// // const firstOption: HTMLInputElement = document.querySelector(".aplication__first--product option");
-// const secondProduct: HTMLInputElement = document.querySelector(".aplication__second--product");
-// const secondOption: HTMLInputElement = document.querySelector(".aplication__second--product option");
-// const result: HTMLDivElement = document.querySelector(".aplication__number");
-// const text: HTMLDivElement = document.querySelector(".aplication__text");
-// let zmiennaOne: number;
-// let zmiennaTwo: number;
-// result.addEventListener("click", ()=> {
-//     mainFunction();
-// })
+import { Counter } from "./Counter.js";
 // // PROBNA FUNKCJA LICZENIA_____________________________________
 // const mainFunction = ()=> {
 //     const firstIndex = products.forEach((element, index) => {
@@ -34,17 +20,26 @@ import { products } from "./_products.js";
 //     result.textContent = String(xTwo);
 // };
 const sprawdzanie = document.documentElement.lang;
-export class Start {
-    constructor() {
-    }
-    render() {
-    }
-}
-;
 const language = new Language(sprawdzanie, ".language__polish", ".language__english", ".aplication__text", ".aplication__grams", ".aplication__first--product option", ".aplication__second--product option");
 const options = new Options(sprawdzanie, ".aplication__first--product", ".aplication__second--product", products);
+const counter = new Counter(".aplication__number", ".aplication__grams", ".aplication__first--product", ".aplication__second--product");
 language.chooseLanguage();
-options.wstrzykiwanie();
+options.ktory();
+// // POBIERANIE ELEMENTÓW_____________________________________
+// const plBtn: HTMLButtonElement = document.querySelector(".language__polish");
+// const engBtn: HTMLButtonElement = document.querySelector(".language__english");
+// const gramsInput: HTMLInputElement = document.querySelector(".aplication__grams");
+// const firstProduct: HTMLInputElement = document.querySelector(".aplication__first--product");
+// // const firstOption: HTMLInputElement = document.querySelector(".aplication__first--product option");
+// const secondProduct: HTMLInputElement = document.querySelector(".aplication__second--product");
+// const secondOption: HTMLInputElement = document.querySelector(".aplication__second--product option");
+// const result: HTMLDivElement = document.querySelector(".aplication__number");
+// const text: HTMLDivElement = document.querySelector(".aplication__text");
+// result.addEventListener("click", ()=> {
+//     mainFunction();
+// })
+// let zmiennaOne: number;
+// let zmiennaTwo: number;
 // // WSTRZYKIWANIE OPCJI W INPUTY SELECT_____________________________________
 // const liczenie = products.forEach(element => {
 //     let optionOne = document.createElement("option");

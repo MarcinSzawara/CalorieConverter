@@ -5,7 +5,11 @@ export class Options {
         this.firstProduct = document.querySelector(firstProduct);
         this.secondProduct = document.querySelector(secondProduct);
     }
-    wstrzykiwanie() {
+    ktory() {
+        (this.lang == "pl") ? this.wstrzykiwaniePolskie() : this.wstrzykiwanieAngielskie();
+    }
+    ;
+    wstrzykiwaniePolskie() {
         this.products.forEach(element => {
             let optionOne = document.createElement("option");
             let optionTwo = document.createElement("option");
@@ -15,5 +19,17 @@ export class Options {
             this.secondProduct.appendChild(optionTwo);
         });
     }
+    ;
+    wstrzykiwanieAngielskie() {
+        this.products.forEach(element => {
+            let optionOne = document.createElement("option");
+            let optionTwo = document.createElement("option");
+            optionOne.textContent = element.engName;
+            optionTwo.textContent = element.engName;
+            this.firstProduct.appendChild(optionOne);
+            this.secondProduct.appendChild(optionTwo);
+        });
+    }
+    ;
 }
 ;

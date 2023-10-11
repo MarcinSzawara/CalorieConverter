@@ -5,6 +5,8 @@ import { Counter } from "./Counter.js";
 
 const sprawdzanie = document.documentElement.lang;
 
+console.log('22222222')
+
 const language = new Language(
     sprawdzanie, 
     ".language__polish", 

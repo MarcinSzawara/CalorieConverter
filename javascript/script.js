@@ -1,6 +1,6 @@
 import { Language } from "./Language.js";
 import { Options } from "./Options.js";
-import { products } from "./_products.js";
+import { products } from "./products.js";
 import { Counter } from "./Counter.js";
 const sprawdzanie = document.documentElement.lang;
 console.log('22222222');

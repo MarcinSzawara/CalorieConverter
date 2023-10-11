@@ -1,4 +1,4 @@
-import { typeVariable  } from "./_types"
+import { typeVariable  } from "./types.js"
 
 export const products: typeVariable[] = [
     {

@@ -7,7 +7,7 @@ export class Counter {
         this.gramsInput = document.querySelector(gramsInput);
         this.firstProduct = document.querySelector(firstProduct);
         this.secondProduct = document.querySelector(secondProduct);
-        this.result.addEventListener("click", this.mainFunction.bind(this));
+        this.secondProduct.addEventListener("input", this.mainFunction.bind(this));
     }
     ;
     mainFunction() {

@@ -1,7 +1,5 @@
 import { typeVariable  } from "./_types"
 
-export const jeden: number = 1;
-
 export const products: typeVariable[] = [
     {
         plName: 'Ogórek',

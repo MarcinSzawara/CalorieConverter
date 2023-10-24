@@ -146,6 +146,11 @@
         box-shadow: 0 0 100px rgba(0, 0, 0, 50%);
         border-radius: 50%;
         background-color: brick.$mint;
+        transition: 0.2s linear;
+        &:hover {
+            box-shadow: 0 0 100px green;
+            background-color: brick.$activ-mint;
+        }
         @include media(xsmall) { 
             height: 60vw;
             width: 60vw; 
@@ -203,6 +208,7 @@
             }
         }
     }
+
     .aplication__form {
         @include flexbox;
         flex-direction: column;

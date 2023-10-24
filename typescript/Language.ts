@@ -1,45 +1,32 @@
+import { langOptions } from "./langOptions.js";
+
 export class Language {
-    
-    constructor(
-        lang: string, 
-        plBtn: string, 
-        engBtn: string, 
+    constructor( 
         text: string, 
         gramsInput: string, 
         firstOption: string, 
-        secondOption: string
+        secondOption: string,
         ) {
-        this.lang = lang;
-        this.plBtn = document.querySelector(plBtn);
-        this.engBtn = document.querySelector(engBtn);
         this.text = document.querySelector(text);
         this.gramsInput = document.querySelector(gramsInput);
         this.firstOption = document.querySelector(firstOption);
         this.secondOption = document.querySelector(secondOption);
-
-        this.plBtn.addEventListener("click", this.polski.bind(this));
-        this.engBtn.addEventListener("click", this.angielski.bind(this));
     };
 
-    chooseLanguage() {
-        (this.lang == "pl")? this.polski() : this.angielski();
+    searchIndex(langPage :string) {
+        let indexNumber :number = 0;
+        langOptions.forEach((element, index) => {
+            if (langPage === element.language) {
+                indexNumber = index;
+            };
+        });
+        return indexNumber;
     };
 
-    polski() {
-        this.plBtn.classList.add("button--active");
-        this.engBtn.classList.remove("button--active");
-        this.text.textContent = "gramów";
-        this.gramsInput.placeholder = "wpisz gramature";
-        this.firstOption.textContent = "wybierz produkt, który chcesz zmienić";
-        this.secondOption.textContent = "wybierz produkt, który chcesz zjeść";
+    insertLanguage(index :number) {
+        this.text.textContent = langOptions[index].click;
+        this.gramsInput.placeholder = langOptions[index].gramsInput;
+        this.firstOption.textContent = langOptions[index].firstOption;
+        this.secondOption.textContent = langOptions[index].secondOption;
     };
-
-    angielski() {
-        this.engBtn.classList.add("button--active");
-        this.plBtn.classList.remove("button--active");
-        this.text.textContent = "grams";
-        this.gramsInput.placeholder = "enter grammage";
-        this.firstOption.textContent = "select the product, which you want to change";
-        this.secondOption.textContent = "select the product, which you want to eat";
     };
-};

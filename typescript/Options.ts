@@ -1,33 +1,22 @@
-export class Options {
-    constructor(lang: string, firstProduct: string, secondProduct: string, products: any) {
-        this.lang = lang;
-        this.products = products;
+import { products } from "./products.js";
 
+export class Options {
+    constructor(
+        firstProduct: string, 
+        secondProduct: string, 
+        ) {
         this.firstProduct = document.querySelector(firstProduct);
         this.secondProduct = document.querySelector(secondProduct);
-    }
-
-    ktory() {
-        (this.lang == "pl")? this.wstrzykiwaniePolskie() : this.wstrzykiwanieAngielskie();
     };
 
-    wstrzykiwaniePolskie() {
-        this.products.forEach(element => {
-            let optionOne = document.createElement("option");
-            let optionTwo = document.createElement("option");
-            optionOne.textContent = element.plName;
-            optionTwo.textContent = element.plName;
-            this.firstProduct.appendChild(optionOne);
-            this.secondProduct.appendChild(optionTwo);
-        });
-    };
-
-    wstrzykiwanieAngielskie() {
-        this.products.forEach(element => {
-            let optionOne = document.createElement("option");
-            let optionTwo = document.createElement("option");
-            optionOne.textContent = element.engName;
-            optionTwo.textContent = element.engName;
+    insertOption(langPage :string, index :number, lolek) {
+        products.forEach((element) => {
+            const arrayProduct = Object.values(element);
+            const productName = arrayProduct[index];
+            const optionOne = document.createElement("option");
+            const optionTwo = document.createElement("option");
+            optionOne.textContent = productName;
+            optionTwo.textContent = productName;
             this.firstProduct.appendChild(optionOne);
             this.secondProduct.appendChild(optionTwo);
         });

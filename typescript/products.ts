@@ -2,53 +2,53 @@ import { typeVariable  } from "./types.js"
 
 export const products: typeVariable[] = [
     {
-        plName: 'Ogórek',
-        engName: 'Cucumber',
+        pl: 'Ogórek',
+        eng: 'Cucumber',
         kcal: 15,
     },
     {
-        plName: 'Pomidor',
-        engName: 'Tomato',
+        pl: 'Pomidor',
+        eng: 'Tomato',
         kcal: 20,
     },
     {
-        plName: 'Marchewka',
-        engName: 'Carrot',
+        pl: 'Marchewka',
+        eng: 'Carrot',
         kcal: 25,
     },
     {
-        plName: 'Ziemniak',
-        engName: 'Potato',
+        pl: 'Ziemniak',
+        eng: 'Potato',
         kcal: 30,
     },
     {
-        plName: 'Papryka',
-        engName: 'Papper',
+        pl: 'Papryka',
+        eng: 'Papper',
         kcal: 35,
     },
     {
-        plName: 'Burak',
-        engName: 'beetroot',
+        pl: 'Burak',
+        eng: 'beetroot',
         kcal: 40,
     },
     {
-        plName: 'Kalafior',
-        engName: 'Cauliflower',
+        pl: 'Kalafior',
+        eng: 'Cauliflower',
         kcal: 45,
     },
     {
-        plName: 'Fasola',
-        engName: 'Beans',
+        pl: 'Fasola',
+        eng: 'Beans',
         kcal: 50,
     },
     {
-        plName: 'Kapusta',
-        engName: 'Cabbage',
+        pl: 'Kapusta',
+        eng: 'Cabbage',
         kcal: 55,
     },
     {
-        plName: 'Rzodkiewka',
-        engName: 'Radish',
+        pl: 'Rzodkiewka',
+        eng: 'Radish',
         kcal: 60,
     },
 ]

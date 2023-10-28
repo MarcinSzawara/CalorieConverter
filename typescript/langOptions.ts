@@ -9,6 +9,7 @@ export const langOptions: typeLanguage[] = [
         firstOption: "wybierz produkt, który chcesz zmienić", 
         secondOption: "wynierz produkt, który chcesz zjeść",
         button: "language__polish",
+        alert: "prosze uzupełnić fomularz",
     },
     {
         language: "eng",
@@ -18,5 +19,6 @@ export const langOptions: typeLanguage[] = [
         firstOption: "select the product, which you want to change", 
         secondOption: "select the product, which you want to eat",
         button: "language__english",
+        alert: "please, fill in a form ",
     }
 ];

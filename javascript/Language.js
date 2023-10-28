@@ -2,13 +2,13 @@ import { langOptions } from "./langOptions.js";
 import { products } from "./products.js";
 export class Language {
     constructor(text, gramsInput, allInputProduct) {
-        this.text = document.querySelector(text);
-        this.gramsInput = document.querySelector(gramsInput);
-        this.allInputProduct = document.querySelectorAll(allInputProduct);
+        this.text = text;
+        this.gramsInput = gramsInput;
+        this.allInputProduct = allInputProduct;
     }
     ;
     searchIndex(langPage) {
-        let indexNumber = 0;
+        let indexNumber = 1;
         langOptions.forEach((element, index) => {
             if (langPage === element.language) {
                 indexNumber = index;

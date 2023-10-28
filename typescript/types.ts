@@ -12,4 +12,5 @@ export interface typeLanguage {
     firstOption: string, 
     secondOption: string,
     button: string,
+    alert: string,
 };

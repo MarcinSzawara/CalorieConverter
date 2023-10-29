@@ -1,6 +1,6 @@
-import { typeLanguage } from "./types.js";
+import { typeLanguage } from "../types/types.js";
 
-export const langOptions: typeLanguage[] = [
+export const languageOptions: typeLanguage[] = [
     {
         language: "pl",
         click: "Kliknij!",

@@ -5,6 +5,7 @@ it's a aplication to convert kalories with one product to another
   <summary>Table of Contents</summary>
   <ol>
     <li><a href="#about-the-project">About The Project</a></li>
+    <li><a href="#built-with">Built With</a></li>
     <li><a href="#getting-started">Getting Started</a></li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
@@ -18,8 +19,11 @@ it's a aplication to convert kalories with one product to another
 ## About The Project - o projekcie
 
 ## Built With - technologie uzyte
+
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+
 ![Less](https://img.shields.io/badge/less-2B4C80?style=for-the-badge&logo=less&logoColor=white)
+
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 
 
@@ -27,6 +31,8 @@ it's a aplication to convert kalories with one product to another
 
 ## Rozwiązania
 
+## pomysły rozwój projektu
+
 ## Contact
 
-## pomysły rozwój projektu
+

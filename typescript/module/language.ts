@@ -1,5 +1,5 @@
-import { languageOptions } from "../objects/languageOptions.js";
-import { products } from "../objects/products.js";
+import { languageOptions } from "../objects/languageOptions";
+import { products } from "../objects/products";
 
 export class Language {
     result:HTMLDivElement

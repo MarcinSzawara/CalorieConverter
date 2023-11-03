@@ -1,3 +1,3 @@
-import { Aplication } from "./module/aplication.js"
+import { Aplication } from "./module/aplication"
 
 const aplication = new Aplication(document.documentElement.lang);

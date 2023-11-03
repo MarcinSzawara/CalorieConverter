@@ -1,6 +1,6 @@
-import { languageOptions } from "../objects/languageOptions.js";
-import { products } from "../objects/products.js";
-import { typeVariable } from "../types/types.js";
+import { languageOptions } from "../objects/languageOptions";
+import { products } from "../objects/products";
+import { typeVariable } from "../types/types";
 
 export class Counter {
     result:HTMLDivElement

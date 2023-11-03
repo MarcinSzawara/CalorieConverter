@@ -1,5 +1,5 @@
-import { Language } from "./language.js";
-import { Counter } from "./counter.js";
+import { Language } from "./language";
+import { Counter } from "./counter";
 
  export class Aplication {
     languagePage:string
@@ -7,8 +7,8 @@ import { Counter } from "./counter.js";
     text:HTMLDivElement
     gramsInput:HTMLInputElement
     allInputProducts:NodeListOf<HTMLSelectElement>
-    language:object
-    counter:object
+    language:any
+    counter:any
     indexNumber:number
     constructor(
         languagePage: string,

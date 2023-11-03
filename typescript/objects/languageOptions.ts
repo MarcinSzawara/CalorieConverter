@@ -1,4 +1,4 @@
-import { typeLanguage } from "../types/types.js";
+import { typeLanguage } from "../types/types";
 
 export const languageOptions: typeLanguage[] = [
     {

@@ -21,7 +21,7 @@
 
 Aplication intend for person who is on diet. Aplication helps change weight one product for another product with maintaining calorie value for example when person would like change one kind of meat or vegetables for different.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#calorie-converter">back to top</a>)</p>
 
 ## 🔧 Built With
 
@@ -31,7 +31,7 @@ Aplication intend for person who is on diet. Aplication helps change weight one 
 
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#calorie-converter">back to top</a>)</p>
 
 ## 💿 Getting Started
 
@@ -52,7 +52,7 @@ npm install
 git clone https://github.com/MarcinSzawara/CalorieConverter.git
 ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#calorie-converter">back to top</a>)</p>
 
 ## 💭 Solutions provided in the project
 
@@ -94,7 +94,7 @@ $breakpoints: (
 <img  src="./image/responsive Frontpage.jpg" />
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#calorie-converter">back to top</a>)</p>
 
 ## 💡 Inspirations and Materials
 1. <a href="https://www.figma.com">Figma</a> - I used figma program for create a aplication design.
@@ -105,13 +105,13 @@ $breakpoints: (
 3. <a href="https://unsplash.com/">Unsplash</a> - i downloaded background pictrue with unsplash. Picture in background it's repeted, and this way it's better for responsive webpage.
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#calorie-converter">back to top</a>)</p>
 
 
 ## 🙋‍♂️ Feel free to contact me
 
 email: [do not hestitate to write to me](mailto:szawara.marcin@gmail.com)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#calorie-converter">back to top</a>)</p>
 
 
